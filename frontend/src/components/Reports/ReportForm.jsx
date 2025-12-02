@@ -178,7 +178,7 @@ export default function ReportForm() {
 
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Photo (Optional)
+            Photo (Required)
           </label>
           <div className="border-2 border-dashed border-gray-300 rounded-md p-4">
             {imagePreview ? (
@@ -239,7 +239,7 @@ export default function ReportForm() {
               type="text"
               value={formData.address}
               onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-              placeholder="Or enter address manually"
+              placeholder="Enter address like House no., Ward no., Street / Landmark, City, Pincode, State"
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
             />
 
